@@ -1,9 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 import raw_data
 from app import app
-from new.models import User, Order, Offer
-
-db = SQLAlchemy(app)
+from new.models import User, Order, Offer, db
 
 
 def init_database():

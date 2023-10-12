@@ -4,9 +4,7 @@ from flask import request
 from flask_sqlalchemy import SQLAlchemy
 from app import app
 from new.database_init import init_database
-from new.models import User, Order, Offer
-
-db = SQLAlchemy(app)
+from new.models import User, Order, Offer, db
 
 
 @app.route("/users", methods=["GET", "POST"])
